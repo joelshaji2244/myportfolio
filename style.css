@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Dosis:wght@200&family=Manrope:wght@700&family=Montserrat:wght@100&family=Outfit:wght@300&family=Preahvihear&family=Roboto:wght@300&family=Titillium+Web:wght@200&family=Varela+Round&display=swap');
+
+/* declaring variables */
+:root{
+    --red:red;
+    --white:white;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    color: var(--white);
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Preahvihear', sans-serif;
+}
+.text-danger{
+    color: var(--red);
+}
+.nav-item a{
+    color: var(--white);
+}
+.nav-item a:hover{
+    color: var(--red);
+}
+.text-font{
+    font-family: 'Outfit', sans-serif;
+}
+.h-5{
+    min-height: 400px;
+}
+.profile{
+    width: 90%;
+    height: 450px;
+}
+.img-fluid{
+    height: 450px;
+    width: 100%;
+}
+.card-about{
+    max-width: 70%;
+}
+.h-about{
+    min-height: 600px;
+}
+.h-myproject{
+    min-height: 85%;
+}
+.card img{
+    height: 300px;
+}
+.heading-h{
+    height: 100px;
+}
+.title{
+    color: var(--red);
+    text-align: center;
+}
+.banner-h{
+    min-height: 20%;
+}
+.icons{
+    color: var(--red);
+}
+.fa-brands{
+    margin-right: 5px;
+}
