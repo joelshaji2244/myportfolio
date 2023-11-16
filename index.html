@@ -12,9 +12,9 @@
 <body>
 <!-- ======== navbar section start ======== -->
 
-    <nav class="navbar navbar-expand-lg bg-black fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand ms-auto fw-bolder text-white" href="#">Portfo<span class="text-danger">lio</span></a>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid h-4" id="navbar">
+            <a class="navbar-brand ms-auto fw-bolder" href="#">Portfo<span class="text-danger">lio</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,18 +27,18 @@
                         <a class="nav-link" href="#aboutme">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="#education">Education</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact Me</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="subscribe">
-                    <button class="btn btn-danger rounded-pill px-4" type="submit">Subscribe Me</button>
-                </form>
             </div>
         </div>
     </nav>
@@ -47,20 +47,22 @@
 
 <!-- ======== home section start ======== -->
 
-    <div class="row border-0 mt-5" id="home">
-        <div class="col-lg-6 col-md-6 col-12 h-5 d-flex align-items-center justify-content-center text-font">
-            <div>
-                <p>Hello my name is</p>
-                <h2>Jake <span class="text-danger">Moris</span></h2>
-                <h6>I'm a Fullstack Developer</h6>
-                <div class="input-group mb-3 border rounded-pill p-1 bg-white mt-3">
-                    <input type="text" class="form-control border-0 rounded-start-pill" placeholder="Feel the Pewer" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn btn-danger rounded-pill" type="button" id="button-addon2">Learn More</button>
+    <div class="container-fluid  mt-5" id="home">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12 mt-4 d-flex align-items-center justify-content-center text-font">
+                <div>
+                    <p>Hello my name is</p>
+                    <h2><span class="text-danger">Joel</span> Shaji</span></h2>
+                    <h6>I'm a Fullstack Developer</h6>
+                    <!-- <div class="input-group mb-3 border rounded-pill p-1 bg-white mt-3">
+                        <input type="text" class="form-control border-0 rounded-start-pill" placeholder="Feel the Pewer" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-danger rounded-pill" type="button" id="button-addon2">Learn More</button>
+                    </div> -->
                 </div>
             </div>
-        </div>
-        <div class="col col-lg-6 col-md-6 col-12">
-            <img src="./images/photo-1450133064473-71024230f91b.jpeg" class="profile rounded float-start" alt="No-image">
+            <div class="col col-lg-6 col-md-6 col-12 d-flex align-items-center justify-content-center mb-3 mt-3 p-0">
+                <img src="./images/joel.jpg" class="profile rounded float-start" alt="No-image">
+            </div>
         </div>
     </div>
 
@@ -68,18 +70,39 @@
 
 <!-- ======== about me section start ======== -->
 
-    <div class="container-fluid h-about d-flex justify-content-center align-items-center bg-dark" id="aboutme">
+    <div class="container-fluid  h-about d-flex justify-content-center align-items-center" id="aboutme">
         <div class="card-about mb-0 border-0 text-font">
             <div class="row g-0">
             <div class="col col-md-4">
-                <img src="./images/photo-1450133064473-71024230f91b.jpeg" class="img-fluid" alt="...">
+                <img src="./images/joel.jpg" class="img-fluid" alt="...">
             </div>
-            <div class="col-md-8 bg-dark text-white border-0">
-                <div class="card-body p-5">
-                <h2 class="card-title">About Me</h2>
-                <h6>Developer <span class="text-danger">& Designer</span></h6>
-                <p class="card-text">I am a creative designer and developer, who aims to work with small businesses and marginalized communities to bring their passions to life. I offer both design and development services of web applications or websites!</p>
-                <button class="btn btn-danger rounded-pill" type="button" id="button-addon2">Learn More</button>
+            <div class="col-md-8 about-box">
+                <div class="card-body p-4">
+                    <h2 class="card-title mb-3 titles">About Me</h2>
+                    <h6 class="mb-3">Developer <span class="text-danger">& Designer</span></h6>
+                    <p class="card-text mb-5">I intend to be a part of an organization where I canconstantly learn and develop my technical and
+                                        managementskills and make best use of it for the growth of theorganization. 
+                                        I look forward to establishing myself byadapting new technologies as well.</p>
+                    <div class="row d-flex">
+                        <div class="col-sm-4 d-flex justify-content-center align-items-center">
+                            <div class="single-about-add-info">
+                                <h5 class="text-center"><i class="fa-solid fa-phone" style="color: #ff0000;"></i></h5>
+                                <p>7012620655</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 d-flex justify-content-center align-items-center">
+                            <div class="single-about-add-info">
+                                <h5 class="text-center"><i class="fa-solid fa-envelope" style="color: #ff0000;"></i></h5>
+                                <p>joelshaji2244@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 d-flex justify-content-center align-items-center">
+                            <div class="single-about-add-info">
+                                <h5 class="text-center"><i class="fa-brands fa-linkedin" style="color: #ff0000;"></i></h5>
+                                <p><a href="https://www.linkedin.com/in/joel-shaji-aa83b4273">@joel_shaji</a></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             </div>
@@ -88,39 +111,225 @@
 
 <!-- ======== about me section end ======== -->
 
+<!-- ======== education section start ======== -->
+
+    <div class="container-fluid  d-flex justify-content-center align-items-center" id="education">
+        <div class="container con-height mb-5">
+            <div class="heading-h d-flex justify-content-center align-items-center text-font mt-4"><h1 class="titles">Education</h1></div>
+            <div class="education-horizontal-timeline">
+                <div class="row text-font">
+                    <div class="col-sm-4">
+                        <div class="single-horizontal-timeline">
+                            <div class="experience-time">
+                                <h2>2018 - 2020</h2>
+                                <h3>Higher Secondary</h3>
+                            </div><!--/.experience-time-->
+                            <div class="timeline-horizontal-border">
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                                <span class="single-timeline-horizontal"></span>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-content">
+                                    <h4 class="title">
+                                        B.V.H.S.S
+                                    </h4>
+                                    <h5>Nayarambalam, Ernakulam</h5>
+                                </div><!--/.timeline-content-->
+                            </div><!--/.timeline-->
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="single-horizontal-timeline">
+                            <div class="experience-time">
+                                <h2>2020 - 2023</h2>
+                                <h3>bachelor <span>of </span> computer application</h3>
+                            </div><!--/.experience-time-->
+                            <div class="timeline-horizontal-border">
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                                <span class="single-timeline-horizontal"></span>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-content">
+                                    <h4 class="title">
+                                        Mar Gregorios Abdul Jaleel Arts And Science College
+                                    </h4>
+                                    <h5>N.Paravur, Ernakulam</h5>
+                                </div><!--/.timeline-content-->
+                            </div><!--/.timeline-->
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="single-horizontal-timeline">
+                            <div class="experience-time">
+                                <h2>2023 -</h2>
+                                <h3>python full stack</h3>
+                            </div><!--/.experience-time-->
+                            <div class="timeline-horizontal-border">
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                                <span class="single-timeline-horizontal spacial-horizontal-line
+                                "></span>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-content">
+                                    <h4 class="title">
+                                        Luminar Technolab
+                                    </h4>
+                                    <h5>Kakkanad, Ernakulam</h5>
+                                </div><!--/.timeline-content-->
+                            </div><!--/.timeline-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ======== education section end ======== -->
+
+<!-- ======== skills section start ======== -->
+
+    <div class="container-fluid d-flex justify-content-center align-items-center" id="skills">
+        <div class="container con-height mb-5 mt-3">
+            <div class="heading-h d-flex justify-content-center align-items-center text-font mt-4"><h1 class="titles">Skills</h1></div>
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="barWrapper">
+                            <span class="progressText">Python</span>
+                            <div class="single-progress-txt">
+                                <div class="progress ">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="width: 90%">
+                                          
+                                    </div>
+                                </div>
+                                <!-- <h3>90%</h3>	 -->
+                            </div>
+                        </div><!-- /.barWrapper -->
+                        <div class="barWrapper">
+                            <span class="progressText">Django</span>
+                            <div class="single-progress-txt">
+                                <div class="progress ">
+                                   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="width: 80%;">
+                                        
+                                   </div>
+                                </div>
+                                <!-- <h3>80%</h3>	 -->
+                            </div>
+                        </div><!-- /.barWrapper -->
+                        <div class="barWrapper">
+                            <span class="progressText">html</span>
+                            <div class="single-progress-txt">
+                                <div class="progress ">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="width: 95%;">
+                                        
+                                    </div>
+                                </div>
+                                <!-- <h3>95%</h3>	 -->
+                            </div>
+                        </div><!-- /.barWrapper -->
+                        
+                    </div>
+                    <div class="col-md-6">
+                        
+                        <div class="barWrapper">
+                            <span class="progressText">css</span>
+                            <div class="single-progress-txt">
+                                <div class="progress ">
+                                   <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="width: 85%;">
+                                        
+                                   </div>
+                                </div>
+                                <!-- <h3>85%</h3>	 -->
+                            </div>
+                        </div><!-- /.barWrapper -->
+                        <div class="barWrapper">
+                            <span class="progressText">Bootstrap</span>
+                            <div class="single-progress-txt">
+                                <div class="progress ">
+                                   <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10" aria-valuemax="100" style="width: 95%;">
+                                       
+                                   </div>
+                                </div>
+                                <!-- <h3>95%</h3>	 -->
+                            </div>
+                        </div><!-- /.barWrapper -->
+                    </div>
+                </div><!-- /.row -->
+            </div>	<!-- /.container -->
+        </div>
+    </div>
+
+<!-- ======== skills section end ======== -->
+
 <!-- ======== myproject section start ======== -->
 
-    <div class="container-fluid h-myproject d-flex justify-content-center align-items-center bg-black" id="projects">
-        <div class="container con-height bg-black mb-5">
-            <div class="heading-h d-flex justify-content-center align-items-center text-font"><h1>My Projects</h1></div>
-            <div class="card-group bg-black text-font column-gap-3">
-                <div class="card bg-dark text-white">
-                  <img src="./images/social.jpg" class="card-img-top" alt="...">
+    <div class="container-fluid h-myproject d-flex justify-content-center align-items-center " id="projects">
+        <div class="container con-height mb-5">
+            <div class="heading-h d-flex justify-content-center align-items-center text-font mt-4"><h1 class="titles">My Projects</h1></div>
+            <div class="card-group text-font column-gap-3">
+                <div class="card ">
+                  <img src="./images/cakehut.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title title">Social Networking</h5>
-                    <p class="card-text">Social networks are websites and apps that allow users and organizations to connect, communicate, share information and form relationships.</p>
-                    <div class="button-align d-flex align-items-center justify-content-center">
-                        <button class="btn btn-danger rounded-pill" type="button" id="button-addon2">Learn More</button>
+                    <h5 class="card-title project-title">CakeHut</h5>
+                    <div class="card-text">
+                        <ul>
+                            <li>Designed and created for buying cakes.</li>
+                            <li>Easily Manageable.</li>
+                        </ul>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-center align-items-center">
+                        <div class="text-start">
+                            <p>Frontend - HTML, CSS, Bootstrap</p>
+                            <p>Backend - Python, Django</p>
+                            <p>API - Django Rest Framework</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href=""><i class="fa-brands fa-github fa-xl icons"></i></a>
                     </div>
                   </div>
                 </div>
-                <div class="card bg-dark text-white">
-                  <img src="./images/job.jpg" class="card-img-top" alt="...">
+                <div class="card ">
+                  <img src="./images/cloths.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title title">Job Portal</h5>
-                    <p class="card-text">Recruitment portals, also known as job boards, are websites or software that can simplify the hiring process for human resources managers and recruiters.</p>
-                    <div class="button-align d-flex align-items-center justify-content-center">
-                        <button class="btn btn-danger rounded-pill" type="button" id="button-addon2">Learn More</button>
+                    <h5 class="card-title project-title">Yousta</h5>
+                    <div class="card-text">
+                        <ul>
+                            <li>Designed and created for buying cloths.</li>
+                            <li>Easily Manageable</li>
+                        </ul>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-center align-items-center">
+                        <div class="text-start">
+                            <p>Frontend - HTML, CSS, Bootstrap</p>
+                            <p>Backend - Python, Django</p>
+                            <p>API - Django Rest Framework</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href=""><i class="fa-brands fa-github fa-xl icons"></i></a>
                     </div>
                   </div>
                 </div>
-                <div class="card bg-dark text-white">
-                  <img src="./images/crm.jpg" class="card-img-top" alt="...">
+                <div class="card ">
+                  <img src="./images/sell_car.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title title">CRM</h5>
-                    <p class="card-text">Customer relationship management is a process in which a business or other organization administers its interactions with customers, typically using data analysis to study large amounts of information.</p>
-                    <div class="button-align d-flex align-items-center justify-content-center">
-                        <button class="btn btn-danger rounded-pill" type="button" id="button-addon2">Learn More</button>
+                    <h5 class="card-title project-title">OLX</h5>
+                    <div class="card-text">
+                        <ul>
+                            <li>Developed for sellvehicles in an easymanner.</li>
+                            <li>Simple to use.</li>
+                        </ul>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-center align-items-center">
+                        <div class="text-start">
+                            <p>Frontend - HTML, CSS</p>
+                            <p>Backend - Python, Django</p>
+                            <p>API - Django Rest Framework</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href=""><i class="fa-brands fa-github fa-xl icons"></i></a>
                     </div>
                   </div>
                 </div>
@@ -130,25 +339,16 @@
 
 <!-- ======== myproject section end ======== -->
 
-<!-- ======== banner section start ======== -->
-
-    <div class="container-fluid bg-dark mt-lg-4 mt-md-4 mt-2 banner-h p-5 text-font">
-        <h4 class="text-center text-white mb-3">Let Me Get You A Beautiful Website</h4>
-        <div class="d-flex justify-content-center"><button class="btn btn-danger rounded-pill" type="button" id="button-addon2">Learn More</button></div>
-    </div>
-
-<!-- ======== banner section end ======== -->
-
-    <footer class="text-font d-flex flex-column align-items-center p-4 bg-black" id="contact">
+    <footer class="text-font d-flex flex-column align-items-center p-4 " id="contact">
         <div>
-            <h3 class="text-center">Jake Moris</h3>
+            <h3 class="text-center">Joel Shaji</h3>
             <p class="text-center">For More, Contact Me</p>
         </div>
         <div class="icons">
-            <i class="fa-brands fa-facebook fa-lg"></i>
-            <i class="fa-brands fa-google fa-lg"></i>
-            <i class="fa-brands fa-github fa-lg"></i>
-            <i class="fa-brands fa-instagram fa-lg"></i>
+            <!-- <i class="fa-brands fa-facebook fa-lg"></i> -->
+            <i class="fa-brands fa-whatsapp fa-xl"></i>
+            <i class="fa-brands fa-github fa-xl"></i>
+            <i class="fa-brands fa-instagram fa-xl"></i>
         </div>
     </footer>
 </body>
